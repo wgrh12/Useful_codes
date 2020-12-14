@@ -1,0 +1,22 @@
+# Create a github repo and push contents to it.
+###########################################
+###### Do this after creating a new repo at github without choosing init a readme.md, license, and .gitignore
+…or create a new repository on the command line
+echo "# gitdemo3" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/wgrh12/gitdemo3.git
+git push -u origin master
+
+################################################
+…or push an existing repository from the command line
+git remote add origin https://github.com/wgrh12/gitdemo3.git
+git push -u origin master
+
+################################################
+…or push some files of an existing repository from the command line
+# In the folder with the files to be pushed, right click and choose “Git bash here” to bring up a git bash terminal.
+git add filename
+git commit -m ‘Some comments’
+git push origin master # You will be asked for github username and password 
